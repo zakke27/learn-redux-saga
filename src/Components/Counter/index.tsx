@@ -29,9 +29,15 @@ const Counter = () => {
     const decrement = () => {
         dispatch(actions.decrementAction());
     };
+
+    const incrementAsync = () => {
+        dispatch(actions.incrementAsyncAction());
+    };
     return (
         <div>
             <button onClick={increment}>count +1</button>
+            {'  '}
+            <button onClick={incrementAsync}>count async +1</button>
             {'  '}
             <button onClick={decrement}>count -1</button>
             <hr />
