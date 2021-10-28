@@ -20,3 +20,9 @@ export const incrementAction = (): Action => ({ type: ActionTypes.INCREMENT });
  * @returns {Action} DECREMENT 类型的 action
  */
 export const decrementAction = (): Action => ({ type: ActionTypes.DECREMENT });
+
+/**
+ * incrementAsync 的 action creator 函数
+ * @returns {Action} INCREMENT_ASYNC 类型的 action
+ */
+export const incrementAsyncAction = (): Action => ({ type: ActionTypes.INCREMENT_ASYNC });
